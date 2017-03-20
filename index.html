@@ -54,7 +54,12 @@
                     <h4>Interests:</h4> Natural Language Processing, Natural Language Generation, Dialogue System, Deep Learning, Machine Learning<br>                
                 </div>
                 <div class="col-lg-6 text-justify">
-                    
+                    <script> function changeImage(element) {
+                         element.src = element.bln ? "./data/gy1.jpg" : "./data/gy2.jpg";
+                         element.bln = !element.bln;  
+                         }
+                    </script>
+                    <img src="./data/gy1.jpg" id="changer" onclick="changeImage(this)"/>
                 </div>
             </div>
           </div>
