@@ -49,7 +49,7 @@ if __name__ == '__main__':
     with open(sys.argv[1]) as f:
         for line in f:
             temp = line.split()
-            pred[int(temp[0])-1].append(int(temp[1]))
+            pred[int(temp[0])-1].append(int(temp[2]))
     p, r = calc(pred, answer, 20)
     print "top 20 precision : ", p
     print "top 20 recall : ", r
