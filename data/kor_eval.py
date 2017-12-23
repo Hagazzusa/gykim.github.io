@@ -72,4 +72,4 @@ if __name__ == '__main__':
     print "top 20 recall : ", r
     print "top 20 MAP(Mean Average Precision) : ", m
     print "All MAP : ", all_m
-            
+             
