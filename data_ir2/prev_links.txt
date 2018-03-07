@@ -1,0 +1,16 @@
+<dt><h4>2017년 상반기</h4></dt><dd></dd>
+                <dt>정보검색(한빛관 309호)</dt><dd><a href="http://cs.kangwon.ac.kr/~leeck/IR/">[이창기 교수님 정보검색 페이지 링크]</a></dd>
+                <dt></dt><dd>1. OT 및 환경 세팅 <a href="./data/ot&env.pptx">[PPT]</a>, <a href="http://lvzuufx.blogspot.kr/2015/08/mingwmsys-couldnt-reserve-space-for.html">[cygwin's heap 에러 해결방법]</a></dd>
+                <dt></dt><dd>2. sed와 정규표현식 <a href="./data/sed,regex.pptx">[PPT]</a> <a href="./data/info.png">[제출정보]</a></dd>
+                <dt></dt><dd>3. awk와 posting_list <a href="./data/awk,postinglist.pptx">[PPT]</a></dd>
+                <dt></dt><dd>4. python 자료형 <a href="./data/python_dt.pptx">[PPT]</a></dd>
+                <dt></dt><dd>5. python 제어문, 함수, 클래스 <a href="./data/python_other.pptx">[PPT]</a></dd>
+                <dt></dt><dd>6. TF-IDF matching score <a href="./data/6.tfidf.pptx">[PPT]</a> <a href="./data/tfidf_error.pptx">[수정사항]</a> <a href="./data/docs.zip">[docs.zip]</a></dd>
+                <dt></dt><dd>7. TF-IDF, Porter stemmer <a href="./data/7.stem.pptx">[PPT]</a><a href="./data/tfidf.PNG">[tfidf code]</a></dd>
+                <dt></dt><dd><a href="./data/AP88s.txt">[AP88-small]</a> <a href="http://cs.kangwon.ac.kr/~leeck/IR/AP88.zip">[AP88-full]</a> <a href="http://cs.kangwon.ac.kr/~leeck/IR/stemmer.zip">[porter stemmer]</a></dd>
+                <dt></dt><dd>8. 휴강 </dd>
+                <dt></dt><dd>9. 휴강 </dd>
+                <dt></dt><dd>10. DB를 이용한 정보검색기 구현 SQLITE3 <a href="./data/8.db.pptx">[PPT]</a></dd>
+                <dt></dt><dd><a href="http://cs.kangwon.ac.kr/~leeck/IR/topics.202-250.txt">[AP88평가용 질문셋]</a> <a href="http://cs.kangwon.ac.kr/~leeck/IR/qrels.202-250.disk2.disk3.AP88.txt">[AP88평가용 정답셋]</a> <a href="http://cs.kangwon.ac.kr/~leeck/IR/trec_eval.zip">[평가 프로그램]</a></dd>
+                <dt></dt><dd>11. CGI Programming <a href="./data/9.cgi.pptx">[PPT]</a><a href="./data/cgi.zip">[cgi.zip]</a></dd>
+                <dt></dt><dd>12. 프로젝트공지와 한국어전처리 <a href="./data/project_notice.pptx">[PPT]</a><a href="./data/corpus.zip">[한국어데이터]</a><a href="./data/kor_eval.py">[한국어성능평가기]</a></dd>
