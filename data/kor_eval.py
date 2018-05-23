@@ -1,3 +1,5 @@
+# -*- coding:utf8 -*-
+
 import sys
 
 answer = [
@@ -61,15 +63,28 @@ def calc(pred, ans, top=20):
     return precision, recall, all_ap
             
 if __name__ == '__main__':
+    if(len(sys.argv) != 2):
+        print "Usage: python2 %s result"%sys.argv[0]
+        exit()
+    
+    print("="*60)
+    print("KNU CS Information Retrieval Final Project - Korean CQA Eval")
+    print("="*60)
+    
     pred = [ [] for i in range(20)]
     with open(sys.argv[1]) as f:
         for line in f:
             temp = line.split()
             pred[int(temp[0])-1].append(int(temp[2]))
-    p, r, m = calc(pred, answer, 20)
+    ans_len_max = max(map(len, pred))*1.0
+    
+    for i in range(1, 11):
+        interpole = int((ans_len_max/10.)*i)
+        if interpole <1: interpole = 1
+        p, r, _ = calc(pred, answer, interpole)
+        print "top {:4d} ({:3d}%) precision: {:.4f}, recall {:.4f}, f1 score: {:.4f}".format(interpole, i*10, p, r, 2*(p*r)/(p+r))
     _, _, all_m = calc(pred, answer, -1)
-    print "top 20 precision : ", p
-    print "top 20 recall : ", r
-    print "top 20 MAP(Mean Average Precision) : ", m
-    print "All MAP : ", all_m
+    print "\nAll MAP(Mean Average Precision) : ", all_m
+    
+    
              
