@@ -57,8 +57,8 @@ def calc(pred, ans, top=20):
         
     all_ap /= 20
             
-    precision = tp/(tp+fp)
-    recall = tp/(tp+fn)
+    precision = tp/(tp+fp if tp+fp != 0 else 1)
+    recall = tp/(tp+fn if tp+fn != 0 else 1)
     
     return precision, recall, all_ap
             
@@ -82,7 +82,7 @@ if __name__ == '__main__':
         interpole = int((ans_len_max/10.)*i)
         if interpole <1: interpole = 1
         p, r, _ = calc(pred, answer, interpole)
-        print "top {:4d} ({:3d}%) precision: {:.4f}, recall {:.4f}, f1 score: {:.4f}".format(interpole, i*10, p, r, 2*(p*r)/(p+r))
+        print "top {:4d} ({:3d}%) precision: {:.4f}, recall {:.4f}, f1 score: {:.4f}".format(interpole, i*10, p, r, 2*(p*r)/(p+r if p+r != 0 else 1))
     _, _, all_m = calc(pred, answer, -1)
     print "\nAll MAP(Mean Average Precision) : ", all_m
     
