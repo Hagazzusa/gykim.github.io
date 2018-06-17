@@ -65,6 +65,7 @@ def calc(pred, ans, top=20):
 if __name__ == '__main__':
     if(len(sys.argv) != 2):
         print "Usage: python2 %s result"%sys.argv[0]
+        print "result file format: Query_ID SortNum Doc_ID"
         exit()
     
     print("="*60)
